@@ -34,6 +34,7 @@ class ComposeExecutor {
             finalArgs.addAll(args)
             e.commandLine finalArgs
             e.standardOutput = os
+            logger.debug("Executing command: {}", finalArgs.join(" "))
         }
     }
 
